@@ -6,14 +6,11 @@
 double pown(double value, uint16_t n) {
   if (n == 0) {
     return 1;
-  }
-  else if (n==1) {
+  } else if (n==1) {
     return value;
-  }
-  else if (n % 2 == 0) {
+  } else if (n % 2 == 0) {
     return pown(value * value, n / 2);
-  }
-  else {
+  } else {
     return pown(value * value, n / 2) * value;
   }
 }
@@ -21,8 +18,7 @@ double pown(double value, uint16_t n) {
 uint64_t fact(uint16_t n) {
   if (n <= 1) {
     return 1;
-  }
-  else {
+  } else {
     return n * fact(n - 1);
   }
 }
